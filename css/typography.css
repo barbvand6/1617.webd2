@@ -1,15 +1,56 @@
-body {
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  font-weight: 300;
-  font-style: normal;
-  line-height: 1.42;
+h1{
+ font-size: 2.2em;
+ font-family: 'aldrich';
+ background-color:#f59b18;
+ color: white;
+ text-align: center;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h2{
+  font-size: 18px;
+  font-family: 'Aldrich';
+  margin: 6px 10px 6px 10px;
+  text-transform: uppercase;
+}
+
+.huisstijlgidsh2{
+  color: #f59b18;
+  font-size: 24px;
+}
+
+h3{
   font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  color:#ec671e;
   font-size: 16px;
-  font-weight: 500;
-  font-style: normal;
-  line-height: 1.42;
+  margin: 6px 15px 6px 10px;
+}
+
+h4{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  margin: 6px 15px 6px 10px;
+}
+
+p{
+  font-family: 'Open Sans', sans-serif;
+  font-weight:300;
+  font-size: 10pt;
+  margin: 6px 15px 6px 10px;
+}
+
+.introteksth4{
+  font-size: 18pt;
+  margin-top: 40px
+}
+
+.introtekst{
+  font-size: 16pt;
+  margin-bottom: 10px;
+}
+
+.centreren{
+  text-align: center;
 }

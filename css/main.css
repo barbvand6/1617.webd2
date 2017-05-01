@@ -1,28 +1,313 @@
+
 * {
   box-sizing: border-box;
 }
 
-html, body {
-  margin: 0;
-  padding: 0;
+/** navigatie */
+
+nav > ul > li{
+  display: block;
+  font-family: 'Open Sans';
+  font-weight: 400;
+  font-style: italic;
+  Color: #ec671e;
+  list-style: none;
+  float: left;
 }
 
-body {
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-  background: rgba(26,35,126 ,1) url('../assets/images/home.jpg') no-repeat center center fixed;
-  background-size: cover;
+nav > ul > li > a{
+    display:block;
+    text-decoration:none;
+    padding:15px 25px;
+    font-weight:800;
+    font-family: 'Open Sans';
+    Color: #ec671e;
+}
 
-  color: rgba(232,234,246 ,1);
+nav > ul > li > a:hoover{
+    Color: #f59b18;
+}
+
+a.company_logo {
+  display:block; /* eerst van de a een block-element maken */
+  width: 150px;
+  height:50px;
+  /* background*/
+  background-image: url(../img/logogroot.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 90% auto;
+  /* magic: tekst laten verdwijnen, door deze naar links op te schuiven */
+  overflow:hidden;
+  text-indent:-900px;
+}
+
+/** body */   
+
+html, body {
+  margin-left: 15px;
+  padding: 0;
+  float: left;
 }
 
 .intro {
   width: 90vw;
-
   padding: 1rem;
   margin-top: 1rem;
-
   background: rgba(41,182,246 ,1);
   color: rgba(1,87,155 ,1);
+}
+
+th{
+  text-align: left;
+  padding: 10px;
+}
+
+.aanpak{
+  border-right: dashed lightgray;
+  margin-left: 40px;
+  height: 220px;
+  padding-top: 60px;
+  background-position: center;
+  background-size: 200px;
+  background-repeat: no-repeat;
+}
+
+.fase1{
+  background-image: url(../img/fase1.png);
+}
+
+.fase2{
+  background-image: url(../img/fase2.png);
+}
+
+.fase3{
+  background-image: url(../img/fase3.png);
+}
+
+.fase4{
+  background-image: url(../img/fase4.png);
+  border-right: none;
+  text-align: center;
+  margin-left:160px;
+  width: 600px;
+}
+
+div > ul > li > a{
+  font-family: 'open sans', sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  color:#ec671e;
+  list-style: none;
+  text-decoration: none;
+  display: block;
+  float: left;
+  padding-right: 60px;
+  margin-bottom: 20px;
+}
+
+#a_onderzoek{
+  margin-left: 300px;
+}
+
+div > ul > li > a:hover{
+  color: #f59b18;
+}
+
+/** afbeeldingen */
+#bureau{
+  float: right;
+}
+
+.afbcentraal{
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+
+/** knoppen */
+
+.dienstenknop{
+  display:block; /* eerst van de a een block-element maken */
+  width: 130px;
+  height: 30px;
+  line-height: 30px; /*tekst vertikaal in het midden centreren*/
+  padding-left: 15px; /*tekst opschuiven */
+  font-weight: 800;
+  color: white;
+  font-family: 'Aldrich';
+  border-radius: 0px 12px 12px 12px;
+  text-decoration: none;
+  margin: 10px;
+  /* background*/
+  background-image: url(../img/driehoek.png);
+  background-repeat: no-repeat;
+  background-position: right 15px center;
+  background-size: 15px 15px;
+  background-color: #ecaf8d;
+}
+
+.dienstenknop:hover{
+  background-color: rgba(236,175,141 ,0.7);
+}
+
+.aanpakknop{
+  display:block; /* eerst van de a een block-element maken */
+  width: 160px;
+  height: 30px;
+  line-height: 30px; /*tekst vertikaal in het midden centreren*/
+  padding-left: 15px; /*tekst opschuiven */
+  font-weight: 800;
+  color: white;
+  font-family: 'Aldrich';
+  border-radius: 0px 12px 12px 12px;
+  text-decoration: none;
+  margin: 10px;
+  /* background*/
+  background-image: url(../img/driehoek.png);
+  background-repeat: no-repeat;
+  background-position: right 15px center;
+  background-size: 15px 15px;
+  background-color: #ecaf8d;
+}
+
+.aanpakknop:hover{
+  background-color: rgba(236,175,141 ,0.7);
+}
+
+.contact2knop{
+  display:block; /* eerst van de a een block-element maken */
+  width: 120px;
+  height: 30px;
+  line-height: 30px; /*tekst vertikaal in het midden centreren*/
+  padding-left: 15px; /*tekst opschuiven */
+  font-weight: 800;
+  color: white;
+  font-family: 'Aldrich';
+  border-radius: 0px 12px 12px 12px;
+  text-decoration: none;
+  margin: 10px;
+  /* background*/
+  background-image: url(../img/driehoek.png);
+  background-repeat: no-repeat;
+  background-position: right 15px center;
+  background-size: 15px 15px;
+  background-color: #ecaf8d;
+}
+
+.contact2knop:hover{
+  background-color: rgba(236,175,141 ,0.7);
+}
+
+.verstuurknop{
+  display:block; /* eerst van de a een block-element maken */
+  width: 180px;
+  height: 30px;
+  line-height: 30px; /*tekst vertikaal in het midden centreren*/
+  padding-left: 50px; /*tekst opschuiven */
+  font-weight: 800;
+  color: white;
+  font-family: 'Aldrich';
+  border-radius: 12px 12px 12px 12px;
+  text-decoration: none;
+  margin: 10px;
+  /* background*/
+  background-image: url(../img/vlieger.png);
+  background-repeat: no-repeat;
+  background-position: left 20px center;
+  background-size: 20px 20px;
+  background-color: #ecaf8d;
+}
+
+.verstuurknop:hover{
+  background-color: rgba(236,175,141 ,0.7);
+}
+
+.groteknop{
+  background-color: #ecaf8d;
+  color: white;
+  font-family: 'aldrich';
+  border-radius: 12px;
+  border: none;
+  text-align: center;
+  padding: 4px 10px;
+  margin: 10px 10px;
+  text-decoration: none;
+}
+.groteknop:hover{
+  background-color: rgba(236,175,141 ,0.7) 
+}
+
+.kleineknop{
+  background-color: #ecaf8d;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  border-radius: 12px;
+  border: none;
+  text-align: center;
+  padding: 4px 10px;
+  margin: 5px 10px;
+  text-decoration: none;
+}
+.kleineknop:hover{
+  background-color: rgba(236,175,141 ,0.7) 
+}
+
+.formulierknop{
+  display:block; /* eerst van de a een block-element maken */
+  width: 335px;
+  height: 40px;
+  line-height: 50px; /*tekst vertikaal in het midden centreren*/
+  text-align: center;
+  font-weight: 800;
+  color: white;
+  font-family: 'Aldrich';
+  border-radius: 12px 12px 12px 12px;
+  text-decoration: none;
+  margin: 10px;
+  font-size: 20pt;
+  /* background*/
+  background-image: url(../img/vlieger.png);
+  background-repeat: no-repeat;
+  background-position: left 30px center;
+  background-size: 30px 30px;
+  background-color: #ecaf8d;
+}
+
+.formulierknop:hover{
+  background-color: rgba(236,175,141 ,0.7);
+}
+
+/** formulier */
+
+input {
+  width: 30%;
+  font-family: 'open Sans', sans-serif;
+  font-weight: 300;
+  padding: 12px 20px;
+  margin: 10px ;
+  box-sizing: border-box;
+  border-radius: 12px;
+  border-style: solid;
+}
+
+#bericht{
+  padding: 12px 20px 100px;
+}
+
+/** footer */
+
+.footer-wrapper{
+  background-color: #f59b18;
+  color: white;
+  margin: 40px 0px 0px 0px;
+  padding: 20;
+  position: absolute;
+  width: 100%;
+  
+}
+
+ul > li {
+  list-style: none;
 }
