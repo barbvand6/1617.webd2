@@ -114,6 +114,11 @@ div > ul > li > a:hover{
   color: #f59b18;
 }
 
+.div_contact{
+  border-right: dashed 2px lightgray;
+  padding: 20px;
+}
+
 /** afbeeldingen */
 #bureau{
   float: right;
@@ -123,6 +128,15 @@ div > ul > li > a:hover{
   display: block;
   margin-left: auto;
   margin-right: auto
+}
+
+.afbdiensten{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.afbdiensten:hover{
+  opacity: 0.3
 }
 
 /** knoppen */
@@ -256,7 +270,7 @@ div > ul > li > a:hover{
 
 .formulierknop{
   display:block; /* eerst van de a een block-element maken */
-  width: 335px;
+  width: 330px;
   height: 40px;
   line-height: 50px; /*tekst vertikaal in het midden centreren*/
   text-align: center;
@@ -282,7 +296,7 @@ div > ul > li > a:hover{
 /** formulier */
 
 input {
-  width: 30%;
+  width: 330px;
   font-family: 'open Sans', sans-serif;
   font-weight: 300;
   padding: 12px 20px;
