@@ -117,6 +117,7 @@ div > ul > li > a:hover{
 .div_contact{
   border-right: dashed 2px lightgray;
   padding: 20px;
+  padding-bottom: 0px;
 }
 
 /** afbeeldingen */
@@ -136,6 +137,10 @@ div > ul > li > a:hover{
 }
 
 .afbdiensten:hover{
+  opacity: 0.3
+}
+
+.afbportfolio:hover{
   opacity: 0.3
 }
 
@@ -291,6 +296,10 @@ div > ul > li > a:hover{
 
 .formulierknop:hover{
   background-color: rgba(236,175,141 ,0.7);
+}
+
+.knopdetail{
+  float: right;
 }
 
 /** formulier */
