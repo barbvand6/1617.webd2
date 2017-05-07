@@ -120,6 +120,10 @@ div > ul > li > a:hover{
   padding-bottom: 0px;
 }
 
+.port{
+  margin-left: 200px;
+}
+
 /** afbeeldingen */
 #bureau{
   float: right;
@@ -141,7 +145,41 @@ div > ul > li > a:hover{
 }
 
 .afbportfolio:hover{
-  opacity: 0.3
+  opacity: 0.15;
+}
+
+.hovertekst{
+  margin: 0;
+  width: 150px;
+  height: 180px;
+}
+
+
+.hovertekst .tekst{
+  font-size: 12pt;
+  padding-left: 10px;
+  visibility: hidden;
+  position: relative;
+  bottom: 120px;
+}
+
+.hovertekst:hover .tekst{
+  visibility: visible;
+}
+
+.overonshover{
+  height: 180px;
+  margin-top: 20px;
+}
+
+.overonshover .afb2{
+  visibility: hidden;
+  bottom: 150px;
+  position: relative;
+}
+
+.overonshover:hover .afb2{
+  visibility: visible;
 }
 
 /** knoppen */
