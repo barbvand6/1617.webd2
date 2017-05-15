@@ -24,7 +24,7 @@ nav > ul > li > a{
     Color: #ec671e;
 }
 
-nav > ul > li > a:hoover{
+nav > ul > li > a:hover{
     Color: #f59b18;
 }
 
@@ -42,6 +42,12 @@ a.company_logo {
   text-indent:-900px;
 }
 
+a.company_logo:hover {
+ -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+  transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}
 /** body */   
 
 html, body {
@@ -61,6 +67,11 @@ html, body {
 th{
   text-align: left;
   padding: 10px;
+}
+
+hr{
+  margin-bottom: 20px;
+  margin-top: 2px;
 }
 
 .aanpak{
@@ -93,7 +104,7 @@ th{
   width: 600px;
 }
 
-div > ul > li > a{
+div > ul.aanpakul > li > a{
   font-family: 'open sans', sans-serif;
   font-weight: 400;
   font-style: italic;
@@ -104,24 +115,28 @@ div > ul > li > a{
   float: left;
   padding-right: 60px;
   margin-bottom: 20px;
+  position: relative;
 }
 
 #a_onderzoek{
   margin-left: 300px;
 }
 
-div > ul > li > a:hover{
+div > ul.aanpakul > li > a:hover{
   color: #f59b18;
 }
 
 .div_contact{
   border-right: dashed 2px lightgray;
-  padding: 20px;
-  padding-bottom: 0px;
+  height: 700px;
 }
 
 .port{
-  margin-left: 200px;
+  margin-left: 70px;
+}
+
+#homememory{
+  margin-left: 80px;
 }
 
 /** afbeeldingen */
@@ -132,7 +147,39 @@ div > ul > li > a:hover{
 .afbcentraal{
   display: block;
   margin-left: auto;
-  margin-right: auto
+  margin-right: auto;
+}
+
+.afbrecentwerk:hover{
+   -webkit-transform: scale(0.8);
+  transform: scale(0.8);
+  -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+  transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}
+
+#home_1234{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
+
+#home_picto5{
+  display: block;
+  margin-left: 70px;
+  margin-bottom: 10px;
+}
+
+#home_contact2{
+  display: block;
+  margin-left: 40px;
+  margin-bottom: 10px;
+}
+
+.afb_aanpak{
+  margin-left: 350px;
+  margin-top: 20px;
+  margin-bottom: 0;
 }
 
 .afbdiensten{
@@ -154,6 +201,9 @@ div > ul > li > a:hover{
   height: 180px;
 }
 
+.hovertekst:hover{
+  opacity: 0.5;
+}
 
 .hovertekst .tekst{
   font-size: 12pt;
@@ -304,16 +354,64 @@ div > ul > li > a:hover{
   border: none;
   text-align: center;
   padding: 4px 10px;
-  margin: 5px 10px;
+  margin: 10px 10px;
   text-decoration: none;
 }
 .kleineknop:hover{
   background-color: rgba(236,175,141 ,0.7) 
 }
 
+.knopdetail{
+  float: right;
+}
+
+
+/** formulier */
+
+input {
+  width: 400px;
+  font-family: 'open Sans', sans-serif;
+  font-weight: 300;
+  padding: 12px 45px 10px;
+  margin: 10px ;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid #ec671e;
+}
+
+#txtUsername{
+  background-image: url(../img/formulier/naam.png);
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: 10px 10px
+}
+
+#email{
+  background-image: url(../img/formulier/mail.png);
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: 10px 10px
+}
+
+#tel{
+  background-image: url(../img/formulier/tel.png);
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: 9px 10px
+}
+
+#bericht{
+  padding: 100px 45px 10px;
+  background-image: url(../img/formulier/bericht.png);
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: 10px 100px
+}
+
+
 .formulierknop{
   display:block; /* eerst van de a een block-element maken */
-  width: 330px;
+  width: 400px;
   height: 40px;
   line-height: 50px; /*tekst vertikaal in het midden centreren*/
   text-align: center;
@@ -336,26 +434,12 @@ div > ul > li > a:hover{
   background-color: rgba(236,175,141 ,0.7);
 }
 
-.knopdetail{
-  float: right;
+.formulier{
+  margin-right: auto;
+  margin-left: auto;
+  width: 500px;
 }
 
-/** formulier */
-
-input {
-  width: 330px;
-  font-family: 'open Sans', sans-serif;
-  font-weight: 300;
-  padding: 12px 20px;
-  margin: 10px ;
-  box-sizing: border-box;
-  border-radius: 12px;
-  border-style: solid;
-}
-
-#bericht{
-  padding: 12px 20px 100px;
-}
 
 /** footer */
 
@@ -363,12 +447,30 @@ input {
   background-color: #f59b18;
   color: white;
   margin: 40px 0px 0px 0px;
-  padding: 20;
+  padding: 10px;
   position: absolute;
   width: 100%;
-  
 }
 
 ul > li {
   list-style: none;
+}
+
+ul.contactfooter > li {
+  font-size: 10pt;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+
+ul.navfooter > li > a{
+  text-decoration: none;
+  color: white;
+  font-size: 10pt;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+
+ul.navfooter > li > a:hover{
+  text-decoration: none;
+  color: #ec671e;
 }
