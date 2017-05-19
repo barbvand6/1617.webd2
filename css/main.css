@@ -51,9 +51,7 @@ a.company_logo:hover {
 /** body */   
 
 html, body {
-  margin-left: 15px;
-  padding: 0;
-  float: left;
+
 }
 
 .intro {
@@ -71,7 +69,7 @@ th{
 
 hr{
   margin-bottom: 20px;
-  margin-top: 2px;
+  margin-top: 5px;
 }
 
 .aanpak{
@@ -100,7 +98,8 @@ hr{
   background-image: url(../img/fase4.png);
   border-right: none;
   text-align: center;
-  margin-left:160px;
+  margin-left:auto;
+  margin-right: auto;
   width: 600px;
 }
 
@@ -139,6 +138,27 @@ div > ul.aanpakul > li > a:hover{
   margin-left: 80px;
 }
 
+div > ul.portfolio_list > li > a{
+  font-family: 'open sans', sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  color: black;
+  font-size: 16pt;
+  margin-left: 20px;
+  padding-bottom: 20px;
+}
+
+div > ul.portfolio_list > li > a:hover{
+  color: #f59b18;
+}
+
+div > ul.portfolio_list > li > a.boldlist {
+  color: #f59b18;
+}
+
+div.center{
+  margin-left: 100px;
+}
 /** afbeeldingen */
 #bureau{
   float: right;
@@ -452,6 +472,10 @@ input {
   width: 100%;
 }
 
+.footer-wrapper-margin{
+  margin-top:130px;
+}
+
 ul > li {
   list-style: none;
 }
@@ -473,4 +497,33 @@ ul.navfooter > li > a{
 ul.navfooter > li > a:hover{
   text-decoration: none;
   color: #ec671e;
+}
+
+/** Sitemap */
+table{
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th > a{
+  text-decoration: none;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+}
+
+th{
+  background-color: #ec671e;
+}
+
+td > a{
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: black;
+  padding: 10px;
+}
+
+th, td {
+    border-bottom: 1px solid #ddd;
 }
