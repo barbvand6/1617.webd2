@@ -53,6 +53,10 @@ a.company_logo:hover {
 html, body {
 
 }
+ a {
+   text-decoration: none;
+   color: white
+ }
 
 .intro {
   width: 90vw;
@@ -66,6 +70,8 @@ th{
   text-align: left;
   padding: 10px;
 }
+
+
 
 hr{
   margin-bottom: 20px;
@@ -157,8 +163,19 @@ div > ul.portfolio_list > li > a.boldlist {
 }
 
 div.center{
-  margin-left: 100px;
+  margin-left: auto;
+  margin-right:auto;
 }
+
+.bevestiging{
+  text-align: center;
+  padding-top:250px;
+  background-image: url(../img/vlieger.png);
+  background-position: center;
+  background-size: 10%;
+  height: 480px;
+}
+
 /** afbeeldingen */
 #bureau{
   float: right;
@@ -351,6 +368,7 @@ div.center{
 }
 
 .groteknop{
+  display: block;
   background-color: #ecaf8d;
   color: white;
   font-family: 'aldrich';
@@ -358,14 +376,16 @@ div.center{
   border: none;
   text-align: center;
   padding: 4px 10px;
-  margin: 10px 10px;
+  margin: 10px;
   text-decoration: none;
+  width: 150px;
 }
 .groteknop:hover{
   background-color: rgba(236,175,141 ,0.7) 
 }
 
 .kleineknop{
+  display: block;
   background-color: #ecaf8d;
   color: white;
   font-family: 'Open Sans', sans-serif;
@@ -374,8 +394,9 @@ div.center{
   border: none;
   text-align: center;
   padding: 4px 10px;
-  margin: 10px 10px;
+  margin:10px;
   text-decoration: none;
+  width: 200px;
 }
 .kleineknop:hover{
   background-color: rgba(236,175,141 ,0.7) 
@@ -497,6 +518,11 @@ ul.navfooter > li > a{
 ul.navfooter > li > a:hover{
   text-decoration: none;
   color: #ec671e;
+}
+
+.footerrij2{
+  text-align: center;
+  margin-top: 20px;
 }
 
 /** Sitemap */
