@@ -176,7 +176,21 @@ div.center{
   height: 480px;
 }
 
+.divsitemap{
+  height: 350px;
+}
+
 /** afbeeldingen */
+.hero {
+  background: #CCC url('../img/heroimage_barbaar.jpg') no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height:  550px;
+  position: relative;
+  margin-bottom: 10px;
+}
+
 #bureau{
   float: right;
 }
@@ -406,6 +420,9 @@ div.center{
   float: right;
 }
 
+.knopmarge{
+  margin-bottom: 150px;
+}
 
 /** formulier */
 
@@ -550,7 +567,7 @@ th > a{
 }
 
 th{
-  background-color: #ec671e;
+  background-color: #ecaf8d;
 }
 
 td > a{
@@ -563,4 +580,5 @@ td > a{
 
 th, td {
     border-bottom: 1px solid #ddd;
+    padding: 10px 5px;
 }
